@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Dropzone styles */
+.image-upload {
+  margin-bottom: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: #f0f0f0;
+}
+
+/* Image preview styles */
+.image-preview {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-preview div {
+  margin: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-preview h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.1);
+}
+
+/* Result image container styles */
+.result-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.result-image-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .dropzone {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .image-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-preview div {
+    max-width: 90%;
+  }
+
+  .result-image-container img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropzone {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .image-preview div {
+    max-width: 100%;
+  }
+
+  .result-image-container img {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .dropzone {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .image-preview div {
+    max-width: 100%;
+  }
+
+  .result-image-container img {
+    max-width: 100%;
+  }
 }
