@@ -39,4 +39,13 @@
 #### .Hover effects on images for better user interaction.
 #### .Easy-to-use buttons and clear feedback for user actions.
 
+### Images 
+#### Dress Images:
+![dress](https://github.com/REDDISUKESH/techvastra/assets/133877665/4654082c-b92c-44f8-838e-098aa567f6f5)
+
+#### Fabric Images:
+![pexels-anj-namoro-1479642-2850487](https://github.com/REDDISUKESH/techvastra/assets/133877665/8f9772c2-ecd0-4908-9aae-c008fbb99bd2)
+
+#### Result Images:
+![Screenshot 2024-06-20 215850](https://github.com/REDDISUKESH/techvastra/assets/133877665/366de4b2-c077-42e2-b1e6-c60649c1313f)
 
